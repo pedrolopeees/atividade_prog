@@ -1,0 +1,17 @@
+import java.util.*;
+
+public class atv02 {
+    public static void main(String[] args) {
+      
+        int[] numeros = {20, 13, 30, 9, 6, 15, 17, 23, 8, 7, 40, 48, 36, 29, 27};
+        int maior = Integer.MIN_VALUE;
+
+        for (int numero : numeros) {
+            if (numero > maior) {
+                maior = numero;
+            }
+        }
+
+        System.out.println("O maior valor do array é: " + maior);
+    }
+}
