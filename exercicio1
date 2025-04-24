@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class atv01 {
+    public static void main(String[] args) {
+      System.out.println("Soma de 10 valores");
+      
+      
+      int [] vetor = new int[10];
+      Scanner scanner = new Scanner(System.in);
+      
+      for (int i = 0; i < vetor.length; i++){
+        System.out.println("Digite o valor " + (i + 1) + ": ");
+        vetor[i] = scanner.nextInt();
+        
+      }
+      
+      scanner.close();
+        
+        int soma = 0;
+        
+        for (int i = 0; i < vetor.length; i++){
+        soma = soma + vetor[i];
+        
+        }
+        
+        System.out.println("A soma é: "+soma);
+      
+    }
+}
